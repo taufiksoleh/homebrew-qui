@@ -7,17 +7,17 @@ class Qui < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/taufiksoleh/qui/releases/download/v0.0.2/qui-macos-x86_64.tar.gz"
-      sha256 "PLACEHOLDER_MACOS_X86_64_SHA256" # macOS Intel
+      sha256 "689501ed0749deaf6c8d09c7df51fd70dd82e8c7810eb3989d327c79943c34ea" # macOS Intel
     elsif Hardware::CPU.arm?
       url "https://github.com/taufiksoleh/qui/releases/download/v0.0.2/qui-macos-aarch64.tar.gz"
-      sha256 "PLACEHOLDER_MACOS_AARCH64_SHA256" # macOS Apple Silicon
+      sha256 "5fab5853cef9038d1e9beae972d8257f8d48704b5cda3e4c386d3b2ade0ad07f" # macOS Apple Silicon
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/taufiksoleh/qui/releases/download/v0.0.2/qui-linux-x86_64.tar.gz"
-      sha256 "PLACEHOLDER_LINUX_X86_64_SHA256" # Linux x86_64
+      sha256 "d3b8746dd86ad9ba0fc73b63afc84bc8dc7c0716df260d2ba0b2180a4c058183" # Linux x86_64
     end
   end
 
