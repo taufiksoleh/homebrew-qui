@@ -1,7 +1,7 @@
 class Qui < Formula
   desc "Kubernetes Terminal UI - An intuitive TUI for managing Kubernetes clusters"
   homepage "https://github.com/taufiksoleh/qui"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
