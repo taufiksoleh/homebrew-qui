@@ -1,23 +1,23 @@
 class Qui < Formula
   desc "Kubernetes Terminal UI - An intuitive TUI for managing Kubernetes clusters"
   homepage "https://github.com/taufiksoleh/qui"
-  version "0.0.5"
+  version "0.0.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/taufiksoleh/qui/releases/download/v0.0.5/qui-macos-x86_64.tar.gz"
-      sha256 "689501ed0749deaf6c8d09c7df51fd70dd82e8c7810eb3989d327c79943c34ea" # macOS Intel
+      url "https://github.com/taufiksoleh/qui/releases/download/v0.0.11/qui-macos-x86_64.tar.gz"
+      sha256 "8200bcb74940befab496381a5aba05652e4f97813b94d5b5bfe214e1ce39c232"
     elsif Hardware::CPU.arm?
-      url "https://github.com/taufiksoleh/qui/releases/download/v0.0.5/qui-macos-aarch64.tar.gz"
-      sha256 "5fab5853cef9038d1e9beae972d8257f8d48704b5cda3e4c386d3b2ade0ad07f" # macOS Apple Silicon
+      url "https://github.com/taufiksoleh/qui/releases/download/v0.0.11/qui-macos-aarch64.tar.gz"
+      sha256 "7b0f395ddb576055fced3e73df6dc3079838de1a3e84b9364e3b38b9696ad889"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taufiksoleh/qui/releases/download/v0.0.5/qui-linux-x86_64.tar.gz"
-      sha256 "d3b8746dd86ad9ba0fc73b63afc84bc8dc7c0716df260d2ba0b2180a4c058183" # Linux x86_64
+      url "https://github.com/taufiksoleh/qui/releases/download/v0.0.11/qui-linux-x86_64.tar.gz"
+      sha256 "758d932f9d3732cdcb6b76ea678877f85b503788c74d86b736cc317f78e63f65"
     end
   end
 
@@ -26,7 +26,6 @@ class Qui < Formula
   end
 
   test do
-    # Test that the binary exists and is executable
     assert_predicate bin/"qui", :exist?
     assert_predicate bin/"qui", :executable?
   end
